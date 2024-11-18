@@ -20,9 +20,6 @@ finish-args:
   - --system-talk-name=org.bluez
   # Display tray icon
   - --talk-name=org.kde.StatusNotifierWatcher
-  # Enable/disable autostart from in-app settings
-  - --talk-name=org.freedesktop.impl.portal.desktop.gnome
-  - --talk-name=org.freedesktop.impl.portal.desktop.kde
 
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
@@ -55,6 +52,6 @@ modules:
         url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.15.0/scripts/make.py
         sha256: 237737880101ca241afd9cee7adc37fef69c89901fe40d412e74a99539ca492c
       - type: file
-        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.15.0/openfreebuds-0.15.0-py3-none-any.whl
-        sha256: bbe279738e5a34f13eb015a58ea6c5828d996c01faba21bb0e3981645c86a71d
+        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.15.1/openfreebuds-0.15.1-py3-none-any.whl
+        sha256: 24cbd71e3e2edf214e047c69a1280ed8b71626e9a65a6f047eaa42d1b1f2f195
 
