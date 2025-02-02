@@ -49,9 +49,9 @@ modules:
       - python ./make.py install /app
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.15.0/scripts/make.py
-        sha256: 237737880101ca241afd9cee7adc37fef69c89901fe40d412e74a99539ca492c
+        url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.16.0/scripts/make.py
+        sha256: 4761d47a9c626164b1b91c791e3c0ca89fb4d33bcac2efeea08caaed77bb2d46
       - type: file
-        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.15.1/openfreebuds-0.15.1-py3-none-any.whl
-        sha256: 24cbd71e3e2edf214e047c69a1280ed8b71626e9a65a6f047eaa42d1b1f2f195
+        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.16.0/openfreebuds-0.16.0-py3-none-any.whl
+        sha256: 8bdb036f7116032780fc17d27d272ee43912b6a57c530bc6f31fed350e829af9
 
