@@ -52,6 +52,6 @@ modules:
         url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.16.0/scripts/make.py
         sha256: 4761d47a9c626164b1b91c791e3c0ca89fb4d33bcac2efeea08caaed77bb2d46
       - type: file
-        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.16.0/openfreebuds-0.16.0-py3-none-any.whl
-        sha256: 8bdb036f7116032780fc17d27d272ee43912b6a57c530bc6f31fed350e829af9
+        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.16.1/openfreebuds-0.16.1-py3-none-any.whl
+        sha256: fed5d7653a26b38a8be46fcbd4e056498ec0c7ee6ce46945d71fbfbed7174594
 
