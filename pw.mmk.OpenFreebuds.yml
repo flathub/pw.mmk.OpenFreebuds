@@ -4,8 +4,8 @@ command: openfreebuds_qt
 sdk: org.kde.Sdk
 runtime: org.kde.Platform
 base: com.riverbankcomputing.PyQt.BaseApp
-runtime-version: '6.7'
-base-version: '6.7'
+runtime-version: '6.9'
+base-version: '6.9'
 
 finish-args:
   # Connect to Bluetooth devices through RFCOMM / SPP protocol
@@ -24,22 +24,12 @@ finish-args:
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 
-build-options:
-  env:
-    # Current release of yarl fails to compile in Flatpak env, idk why
-    # This is temporary, switch to pure-python implementation of yarl
-    YARL_NO_EXTENSIONS: "true"
-
 modules:
   - name: python3_extras
     buildsystem: simple
     build-commands:
-      - pip3 install --prefix=/app --no-deps *.whl
       - tar xzf just.tar.gz just && install just /app/bin
     sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/df/b3/072c28eace372ba7630ea187b7efd7f09cc8bcebf847a96b5e03e9cc0828/expandvars-0.12.0-py3-none-any.whl
-        sha256: 7432c1c2ae50c671a8146583177d60020dd210ada7d940e52af91f1f84f753b2
       - type: file
         url: https://github.com/casey/just/releases/download/1.39.0/just-1.39.0-aarch64-unknown-linux-musl.tar.gz
         sha256: f1b9acdb4374983539c765d60374350932527df807b25975e05abb152c9021e7
@@ -62,9 +52,10 @@ modules:
       - rm -rf /app/bin/just justfile dist
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.17.0/justfile
-        sha256: fb6d68bb726c4963690800a132e32d5c0a39d117afa6553c4eda56551c3aca0a
+        url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.17.1/justfile
+        sha256: 475890a3fb779a703e4ce56f2464e3bc28813b3333fa5163971dfc7a361d974c
       - type: file
-        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.17.0/openfreebuds-0.17.0-py3-none-any.whl
-        sha256: 39271610a93b8f2249357d366c70a108bc76c4c8c5a025884a12bcf159adff89
+        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.17.1/openfreebuds-0.17.1-py3-none-any.whl
+        sha256: 49bfe1bc9ea0fe9441f5991cc26879c3a63460551c712dc7f26cce431ae26caf
         dest: ./dist
+
