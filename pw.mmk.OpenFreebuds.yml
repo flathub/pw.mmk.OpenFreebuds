@@ -52,10 +52,10 @@ modules:
       - rm -rf /app/bin/just justfile dist
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.17.1/justfile
-        sha256: 475890a3fb779a703e4ce56f2464e3bc28813b3333fa5163971dfc7a361d974c
+        url: https://raw.githubusercontent.com/melianmiko/OpenFreebuds/refs/tags/v0.17.3/justfile
+        sha256: fe4e9e1bc76d6fe612f96672a995f3df7ee16f68fb2839b481f36d11e790b593
       - type: file
-        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.17.1/openfreebuds-0.17.1-py3-none-any.whl
-        sha256: 49bfe1bc9ea0fe9441f5991cc26879c3a63460551c712dc7f26cce431ae26caf
+        url: https://github.com/melianmiko/OpenFreebuds/releases/download/v0.17.3/openfreebuds-0.17.3-py3-none-any.whl
+        sha256: d070847b83e1aa48b48c89db2983adf35f71a5d8a69c1558c23a3d0eb61f5f48
         dest: ./dist
 
