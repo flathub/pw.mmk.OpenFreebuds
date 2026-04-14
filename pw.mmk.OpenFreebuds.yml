@@ -23,6 +23,9 @@ finish-args:
 
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
+build-options:
+  env:
+    - BASEAPP_REMOVE_PYWEBENGINE=1
 
 modules:
   - name: python3_extras
